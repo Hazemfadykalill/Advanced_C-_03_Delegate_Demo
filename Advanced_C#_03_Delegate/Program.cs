@@ -71,10 +71,10 @@ namespace Advanced_C__03_Delegate
 
             #region Example 03 Without Generics
             //List<int> Numbers=Enumerable.Range(1,100).ToList();
-            
-                
+
+
             ////Even 
-            //EvenDelegate Even = Listing.Even;
+            //EvenOrOddDelegate Even = Listing.Even;
             //List<int> Result = Listing.FindNumbersEvenOrOdd(Numbers, Even);
             //Console.WriteLine("Even Numbers");
             //foreach (var item in Result)
@@ -86,7 +86,7 @@ namespace Advanced_C__03_Delegate
 
 
             ////Even 
-            //EvenDelegate Odd = Listing.Odd;
+            //EvenOrOddDelegate Odd = Listing.Odd;
             //List<int> Result02 = Listing.FindNumbersEvenOrOdd(Numbers, Odd);
             //Console.WriteLine("Odd Numbers");
             //foreach (var item in Result02)
@@ -95,6 +95,12 @@ namespace Advanced_C__03_Delegate
 
             //}
             //Console.WriteLine("\n\n============");
+
+            #endregion
+
+            #region Ex 03 With Generics
+
+
 
             #endregion
         }
