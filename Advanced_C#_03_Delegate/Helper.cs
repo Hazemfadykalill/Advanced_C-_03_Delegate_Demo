@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__03_Delegate
 {
-    public class Helper
+    public class Helper<T>
     {
-        public static void Swap(ref int x ,ref int y)
+        public static void Swap(ref T x ,ref T y)
         {
-            int Temp = x;
+            T Temp = x;
             x = y;
             y=Temp; 
         }

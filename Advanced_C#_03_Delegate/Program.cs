@@ -1,4 +1,5 @@
 ﻿using static Advanced_C__03_Delegate.Sorting;
+using static Advanced_C__03_Delegate.Sorting<T>;
 using static Advanced_C__03_Delegate.StringsFunctions;
 
 namespace Advanced_C__03_Delegate
@@ -25,7 +26,7 @@ namespace Advanced_C__03_Delegate
             #endregion
 
             #region Delegate [ Example 02 Sorting ]
-            int[] Numbers = new int[] { 5, 7, 8, 7, 6, 4, 3, 2, 1 };
+            //int[] Numbers = new int[] { 5, 7, 8, 7, 6, 4, 3, 2, 1 };
             ////Ascending
             //Sorting.BubbleSortAscending(Numbers);
             //foreach(int number in Numbers)
@@ -36,29 +37,35 @@ namespace Advanced_C__03_Delegate
 
             #region After Delegate
             //Descending
-            SortingDelegateGraterOrSmallest Grater=Sorting.Greater;
-            Sorting.BubbleSortWithDelegate(Numbers, Grater);
+            //SortingDelegateGraterOrSmallest Grater=Sorting.Greater;
+            //Sorting.BubbleSortWithDelegate(Numbers, Grater);
 
-            foreach (int number in Numbers)
-            {
-                Console.Write(" " + number);
+            //foreach (int number in Numbers)
+            //{
+            //    Console.Write(" " + number);
 
-            }
+            //}
 
-            Console.WriteLine("\n\n=============");
+            //Console.WriteLine("\n\n=============");
 
-            //Ascending
-            SortingDelegateGraterOrSmallest Smaller = Sorting.Smallest;
-            Sorting.BubbleSortWithDelegate(Numbers, Smaller);
+            ////Ascending
+            //SortingDelegateGraterOrSmallest Smaller = Sorting.Smallest;
+            //Sorting.BubbleSortWithDelegate(Numbers, Smaller);
 
-            foreach (int number in Numbers)
-            {
-                Console.Write(" " + number);
+            //foreach (int number in Numbers)
+            //{
+            //    Console.Write(" " + number);
 
-            }
+            //}
 
-           
+
             #endregion
+            #endregion
+            #region Delegate With Generics
+            //string[] Characheter = { "a", "b", "c" };
+            //int[] Numbers = { 1, 2, 3, 8,7,5,8};
+            //SortingDelegateGraterOrSmallest As = Sorting<int>.Greater;
+            //Sorting<int>.BubbleSortWithDelegateWithGenerics(Numbers, As); 
             #endregion
         }
     }
