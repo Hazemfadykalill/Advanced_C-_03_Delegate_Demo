@@ -99,7 +99,13 @@ namespace Advanced_C__03_Delegate
             #endregion
 
             #region Ex 03 With Generics
-
+            //GeneralDel<string> three = Listing.GreaterThree;
+            //List<string> Names = new List<string>() { "Hazam","Fady","Mohamed","fa" };
+            //List<string> Result=Listing.Filteration<string>(Names, three);
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(" " + item);
+            //}
 
 
             #endregion
