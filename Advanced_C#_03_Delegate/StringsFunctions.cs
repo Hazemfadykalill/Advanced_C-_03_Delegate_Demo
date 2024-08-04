@@ -8,7 +8,10 @@ namespace Advanced_C__03_Delegate
 {
     public class StringsFunctions
     {
-        public delegate int GetCountFuncUpper(string word);
+        #region Delegates Faces
+        public delegate int GetCountFuncUpper(string word); 
+        #endregion
+        #region Method Delegate [ Exampl01 ] 
         public static int GetCountOfUpperCharacter(string Word)
         {
             int count = 0;
@@ -24,7 +27,7 @@ namespace Advanced_C__03_Delegate
                 }
                 return count;
 
-           }
+            }
             return count;
         }
 
@@ -45,6 +48,7 @@ namespace Advanced_C__03_Delegate
 
             }
             return count;
-        }
+        } 
+        #endregion
     }
 }
