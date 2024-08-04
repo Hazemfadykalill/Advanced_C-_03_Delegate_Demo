@@ -1,5 +1,6 @@
-﻿using static Advanced_C__03_Delegate.Sorting;
-using static Advanced_C__03_Delegate.Sorting<T>;
+﻿using System.Collections;
+using static Advanced_C__03_Delegate.Listing;
+
 using static Advanced_C__03_Delegate.StringsFunctions;
 
 namespace Advanced_C__03_Delegate
@@ -66,6 +67,35 @@ namespace Advanced_C__03_Delegate
             //int[] Numbers = { 1, 2, 3, 8,7,5,8};
             //SortingDelegateGraterOrSmallest As = Sorting<int>.Greater;
             //Sorting<int>.BubbleSortWithDelegateWithGenerics(Numbers, As); 
+            #endregion
+
+            #region Example 03 Without Generics
+            //List<int> Numbers=Enumerable.Range(1,100).ToList();
+            
+                
+            ////Even 
+            //EvenDelegate Even = Listing.Even;
+            //List<int> Result = Listing.FindNumbersEvenOrOdd(Numbers, Even);
+            //Console.WriteLine("Even Numbers");
+            //foreach (var item in Result)
+            //{
+            //    Console.Write("" + " " + item);
+
+            //}
+            //Console.WriteLine("\n\n============");
+
+
+            ////Even 
+            //EvenDelegate Odd = Listing.Odd;
+            //List<int> Result02 = Listing.FindNumbersEvenOrOdd(Numbers, Odd);
+            //Console.WriteLine("Odd Numbers");
+            //foreach (var item in Result02)
+            //{
+            //    Console.Write("" + " " + item);
+
+            //}
+            //Console.WriteLine("\n\n============");
+
             #endregion
         }
     }
