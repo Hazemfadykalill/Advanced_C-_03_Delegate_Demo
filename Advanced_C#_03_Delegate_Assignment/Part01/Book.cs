@@ -31,7 +31,13 @@ namespace Advanced_C__03_Delegate_Assignment.Part01
         public override string ToString()
         {
 
-            return base.ToString();
+            return $"[ "+
+                $"ISBN Book Is {ISBN}" +
+                $" And Title Is {Title}" +
+                $" And Price Is {Price}" +
+                $" And Author Is : {Authors}" +
+                $" And Publish Date Is \" {PublicationDate}\"" +
+                $" ]";
 
         }
         #endregion

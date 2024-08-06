@@ -10,17 +10,21 @@ namespace Advanced_C__03_Delegate_Assignment.Part01
     {
         public static string GetTitle(Book B)
         {
-            return "";
+            return B.Title;
         }
 
-        public static string GetAuthors(Book B)
+        public static string[] GetAuthors(Book B)
         {
-            return "";
+            string[] Authors= B.Authors;
+            return Authors;
+         
+
+          
         }
 
-        public static string GetPrice(Book B)
+        public static decimal GetPrice(Book B)
         {
-            return "";
+            return B.Price;
         }
 
     }
