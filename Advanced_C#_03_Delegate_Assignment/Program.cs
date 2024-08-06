@@ -1,4 +1,5 @@
 ﻿using Advanced_C__03_Delegate_Assignment.Part01;
+using Advanced_C__03_Delegate_Assignment.Part02;
 using System.Runtime.Intrinsics.X86;
 using static Advanced_C__03_Delegate_Assignment.Part01.ProcessBooks;
 
@@ -39,16 +40,17 @@ namespace Advanced_C__03_Delegate_Assignment
 
             //b)Use the Proper build in delegate. 
 
-            Func<Book,string> GetTitle = BookFunctions.GetTitle;
-            Func<Book, string[]> GetAuthors = BookFunctions.GetAuthors;
-            Func<Book,decimal> GetPrice = BookFunctions.GetPrice;
+            //Func<Book,string> GetTitle = BookFunctions.GetTitle;
+            //Func<Book, string[]> GetAuthors = BookFunctions.GetAuthors;
+            //Func<Book,decimal> GetPrice = BookFunctions.GetPrice;
 
 
             //c)Anonymous Method(GetISBN).
-            Func<Book, string> GetISBN = delegate (Book B) { return B.ISBN; };
+
+            //Func<Book, string> GetISBN = delegate (Book B) { return B.ISBN; };
 
             //d)Lambda Expression(GetPublicationDate).
-            Func<Book, DateTime> GetPublicationDate =  B=>  B.PublicationDate;
+            //Func<Book, DateTime> GetPublicationDate =  B=>  B.PublicationDate;
 
 
             #endregion
@@ -65,6 +67,8 @@ namespace Advanced_C__03_Delegate_Assignment
             //Console.WriteLine("Welcome Question 2");
             #region Q02
             /*2.We need to Implement the List methods from scratch with all overloads.*/
+
+                    //Sol   Class ListMethod
             //●	Exist
             //●	Find
             //●	Find All
@@ -73,6 +77,8 @@ namespace Advanced_C__03_Delegate_Assignment
             //●	Find Last Index
             //●	Foreach
             //●	TrueForAll
+
+
 
             #endregion
 
