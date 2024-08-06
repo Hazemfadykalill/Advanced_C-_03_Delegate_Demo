@@ -15,6 +15,12 @@ namespace Advanced_C__03_Delegate
             x = y;
             y = Temp;
         } 
+
+
+        public static void actionFunc()
+        {
+            Console.Write("Hazem Fady");
+        }
         #endregion
     }
 }

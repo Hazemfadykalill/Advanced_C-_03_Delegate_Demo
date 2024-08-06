@@ -109,6 +109,11 @@ namespace Advanced_C__03_Delegate
 
 
             #endregion
+
+            #region Action Delegate
+            //Action action = Helper<int>.actionFunc;
+            //action();
+            #endregion
         }
     }
 }
